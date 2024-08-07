@@ -1,0 +1,735 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CityTour</title>
+
+    <!-- swiper cdn link -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Custom link for CSS-->
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+
+ <!-- header section starts-->  
+
+ <header>
+
+    <div id="menu-bar" class="fas fa-bars"> </div>
+
+     <a href="#" class="logo"><span>City</span>tour </a>
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#book">Book</a>
+        <a href="#package">Package</a>
+        <a href="#service">Service</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#review">Review</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+    </div>
+
+    <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search here..">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+
+
+ </header>
+
+  <!-- header section ends --> 
+    
+<!-- login form container -->
+
+<div class="login-form-container">
+
+    <i class="fas fa-times" id="form-close"></i>
+
+    <form action="">
+        <h3>login</h3>
+        <input type="email" class="box" placeholder="enter your email">
+        <input type="password" class="box" placeholder="enter your password">
+        <input type="submit" value="login now" class="btn">
+        <input type="checkbox" id="remember">
+        <label for="remember">remember me</label>
+
+        <p> forget password? <a href="#">click here</a> </p>
+        <p>don't have an account? <a href="#">register now</a> </p>
+    </form>
+
+</div>
+
+
+<!-- home section starts-->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>advanture is worthwhile</h3>
+        <p>discover new place with us, advanture awaits <br>
+        <br> <br> <br> <br>
+        </p>
+         
+         <!-- Auto typing font code starts-->
+        <div class="container">
+            <h1> <span  class="auto-type"></span> </h1>
+            
+        </div>
+    
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    
+        <script>
+            var typed = new Typed(".auto-type", {
+                strings: ["Eat", "Travel", "Explore"],
+                typespeed:50,
+                backspeed:50,
+                loop: true
+            })
+    
+        </script>
+       <!-- Auto typing font code ends-->
+
+
+        </div>
+
+        <div class="controls">
+            <span class="vid-btn active" data-src="image/vid-1.mp4"></span>
+            <span class="vid-btn" data-src="Image/vid-2.mp4"></span>
+            <span class="vid-btn" data-src="Image/vid-3.mp4"></span>
+            <span class="vid-btn" data-src="Image/vid-4.mp4"></span>
+            <span class="vid-btn" data-src="Image/vid-5.mp4"></span>
+        </div>
+
+        <div class="video-container">
+            <video src="image/vid-1.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- book section starts-->
+
+<section class="book" id="book">
+    <h1 class="heading">
+        <span>b</span>
+        <span>o</span>
+        <span>o</span>
+        <span>k</span>
+        <span class="space"></span>
+        <span>n</span>
+        <span>o</span>
+        <span>w</span>
+    </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="Image\book-img.svg" alt="">
+            
+        </div>
+
+        <form action="connect.php" method="post">
+            <div class="inputBox">
+                <h3>where to</h3>
+                <input type="text" id="where" placeholder="place name" name="where" >
+            </div>
+
+            <div class="inputBox">
+                <h3>how many</h3>
+                <input type="number" id="many" placeholder="number of guests" name="many">
+            </div>
+
+            <div class="inputBox">
+                <h3>arrivals</h3>
+                <input type="date" id="date"  name="arrival">
+            </div>
+
+            <div class="inputBox">
+                <h3>leaving</h3>
+                <input type="date" id="leaving" name="leaving">
+            </div>
+
+            <div class="inputBox">
+                <h3>email</h3>
+                <input type="email" id="email" placeholder="email" name="email">
+            </div>
+
+            <div class="inputBox">
+                <h3>Address</h3>
+                <input type="text" id="address" placeholder="address" name="address">
+            </div>
+
+
+            <input type="submit" class="btn" value="book now" name="book">
+        </form>
+
+    </div>
+</section>
+
+<!-- book section ends-->
+
+
+
+<!-- package section starts-->
+
+<section class="packages" id="packages">
+
+    <h1 class="heading">
+        <span>p</span>
+        <span>a</span>
+        <span>c</span>
+        <span>k</span>
+        <span>a</span>
+        <span>g</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="Image\p-1.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Taj Mahal </h3>
+                <p> 1 day/night <br> per person</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> 5000 <span>7999 </span> </div>
+                <a href="#" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="Image\p-2.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Mumbai </h3>
+                <p> 1 day/night <br> per person</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> 8000 <span>10000</span> </div>
+                <a href="#" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="Image\p-3.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Kerla </h3>
+                <p> 1 day/night <br> per person</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> 9000 <span>10000</span> </div>
+                <a href="#" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="Image\p-4.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Udaipur </h3>
+                <p> 1 day/night <br> per person</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> 5000 <span>6500</span> </div>
+                <a href="#" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="Image\p-5.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Kedarnath </h3>
+                <p> 1 day/night <br> per person</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> 6000 <span>7000</span></div>
+                <a href="#" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="Image\p-6.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Goa </h3>
+                <p> 1 day/night <br> per person</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> 7000 <span>8999</span> </div>
+                <a href="#" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="Image\p-7.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Ladakh </h3>
+                <p> 1 day/night <br> per person</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> 7000 <span>8000</span> </div>
+                <a href="#" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="Image\p-8.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Simla </h3>
+                <p> 1 day/night <br> per person</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> 7000 <span>8500</span></div>
+                <a href="#" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="Image\p-9.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Jaipur </h3>
+                <p> 1 day/night <br> per person</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> 3999 <span>5000</span></div>
+                <a href="#" class="btn">book now</a>
+            </div>
+        </div>
+
+
+    </div>
+
+</section>
+
+<!-- package section ends-->
+
+<!-- services section starts-->
+
+<section class="services" id="services">
+
+    <h1 class="heading">
+        <span>s</span>
+        <span>e</span>
+        <span>r</span>
+        <span>v</span>
+        <span>i</span>
+        <span>c</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-hotel "></i>
+            <h3>best hotels</h3>
+            <p>
+                
+            </p>
+            
+        </div>
+
+        <div class="box">
+            <i class="fas fa-utensils "></i>
+            <h3>food and drinks</h3>
+            <p>
+                
+            </p>
+            
+        </div>
+
+        <div class="box">
+            <i class="fas fa-bullhorn "></i>
+            <h3>safty guide</h3>
+            <p>
+                
+            </p>
+            
+        </div>
+
+        <div class="box">
+            <i class="fas fa-plane "></i>
+            <h3>fastest travel</h3>
+            <p></p>
+            
+        </div>
+
+        <div class="box">
+            <i class="fas fa-hiking "></i>
+            <h3>advanture</h3>
+            <p></p>
+            
+        </div>
+
+    </div>
+
+</section>
+
+<!-- services section ends-->
+
+
+<!-- gallery section starts-->
+
+<section class="gallery" id="gallery">
+
+    
+    <h1 class="heading">
+        <span>g</span>
+        <span>a</span>
+        <span>l</span>
+        <span>l</span>
+        <span>e</span>
+        <span>r</span>
+        <span>y</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="Image\g-15.jpg"  alt="">
+            <div class="content">
+                <h3>Mysore Place</h3>
+                <p>Mysore is commonly described as the 'City of Palaces', and there are 
+                    seven places including this one.
+                </p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+
+        
+        <div class="box">
+            <img src="Image\g-29.jpg"  alt="">
+            <div class="content">
+                <h3>Jaisalmer</h3>
+                <p> Massive Jaisalmer Fort & Jain Temples
+                </p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="Image\g-1.jpg"  alt="">
+            <div class="content">
+                <h3>Golden Temple</h3>
+                <p>The Famous gurudwara located in the city of Amritsar, Panjab. </p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="Image\g-30.jpg"  alt="">
+            <div class="content">
+                <h3>Ahmedabad</h3>
+                <p> Ghandi Ashram, pols & Calico Museum</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="Image\g-31.jpg"  alt="">
+            <div class="content">
+                <h3>Rishikesh</h3>
+                <p> Yoga center & Himalayan trekking base</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="Image\g-26.jpg"  alt="">
+            <div class="content">
+                <h3>Red Fort</h3>
+                <p> The historic fort in Old Delhi, Delhi India that served as the main 
+                    residence of the Mughak Emperors.</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="Image\g-32.jpg"  alt="">
+            <div class="content">
+                <h3>Jodhpur</h3>
+                <p> Blue City with palaces, Mehrangarh Fort and the Heritage of Rajgharana</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="Image\g-33.jpg"  alt="">
+            <div class="content">
+                <h3> Kochi</h3>
+                <p> Fort Kochi & Paradesi Synagogue</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="Image\g-34.jpg"  alt="">
+            <div class="content">
+                <h3> Varanasi</h3>
+                <p> Kashi Vishwanath Temple & Ganges River</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- gallery section ends-->
+
+
+<!-- review section starts-->
+
+<section class="review" id="review">
+
+    <h1 class="heading">
+        <span>r</span>
+        <span>e</span>
+        <span>v</span>
+        <span>i</span>
+        <span>e</span>
+        <span>w</span>
+        
+    </h1>
+
+    <div class="swiper-container  review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="Image/p1.png" alt="">
+                    <h3>Ananya</h3>
+                    <p>City Tour really provide fantastic service. Look forward next vacation . your services are the best.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="Image/p2.jpg" alt="">
+                    <h3>Rahul</h3>
+                    <p> We created lots of wonderful memories and the trip was so well planned by City Tour. Their service was also great</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="Image/p3.jpg" alt="">
+                    <h3>Aadya</h3>
+                    <p> Trip was good organised and as per commitment. Hotel is too good , food and other services are also good.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="Image/p4.png" alt="">
+                    <h3>Neel</h3>
+                    <p> Trip was lovely and well planned.. i wanted to thank City Tour  to make this experience awesome with 24x7 availability</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- review section ends-->
+
+
+<!-- contact section starts-->
+
+<section class="contact">
+
+    <h1 class="heading">
+        <span>c</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+        
+    </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="Image/contact-img.svg" alt="">
+        </div>
+
+        <form action="">
+            <div class="inputBox">
+                <input type="text" placeholder="name">
+                <input type="email" placeholder="email">
+            </div>
+
+            <div class="inputBox">
+                
+                <input type="text" placeholder="contact number">
+            </div>
+            <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
+            <input type="submit" class="btn" value="send message">
+        </form>
+
+    </div>
+
+</section>
+
+<!-- contact section ends-->
+
+
+<!-- footer section starts -->
+
+
+<section class="footer">
+    <div class="box-container">
+
+        <div class="box">
+            <h3>about us</h3>
+           <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, architecto!</p>
+   
+        </div>
+
+        <div class="box">
+            <h3>Branch location</h3>
+            <a href="#">Delhi</a>
+            <a href="#">Udaipur</a>
+            <a href="#">Ahmedabad</a>
+            <a href="#">Mumbai</a>
+   
+        </div>
+
+        <div class="box">
+            <h3>Quick links</h3>
+            <a href="#">home</a>
+            <a href="#">book</a>
+            <a href="#">packages</a>
+            <a href="#">services</a>
+            <a href="#">gallery</a>
+            <a href="#">review</a>
+            <a href="#">contact</a>
+   
+        </div>
+
+        <div class="box">
+            <h3>connect with us</h3>
+            <a href="#">facebook</a>
+            <a href="#">instagram</a>
+            <a href="#">twiter</a>
+            
+        </div>
+    </div>
+
+    <h1 class="credit"> created by <span>Himanshu Chouhan & Hans Patel</span> all rights reserved ! </h1>
+
+</section>
+
+
+
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<!-- custome js file link-->
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
